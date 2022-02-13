@@ -1,0 +1,117 @@
+:root{
+    --headerHeigth: 8vh;
+    --headerTitleBackgroundColor: #000;
+    --headerTitleColor: #fff;
+    --headerFontSize:1.3em;
+    --mainHeigth: calc(100vh - (var(--headerHeigth) + var(--footerHeigth)));
+    --footerHeigth: 5vh;
+    --footerBackgroundColor: #000;
+    --footerColor:#fff;
+    --footerFontSize:1.3em;
+    --mainFontSize:1.2em;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header{
+    display: flex;
+    height: var(--headerHeigth);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--headerTitleBackgroundColor);
+}
+
+.header-title a{
+    color: var(--headerTitleColor);
+    text-decoration: none;
+    font-size: var(--headerFontSize);
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.header-title a:hover{
+    text-shadow: 0px 0px 10px #fff;
+}
+.main{
+    height: var(--mainHeigth);
+    font-size: var(--mainFontSize);
+    overflow-y:auto;
+}
+.main-form{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 1vh;
+    background-color: #fff;
+}
+.main-label,.main-input--text{
+    margin-right: 2ch;
+
+}
+.main-input--text{
+    width: 50vw;
+    margin-right: 2ch;
+    font-size: 1.005rem;
+}
+.main-tasks--task{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em; 
+}
+.tasks-form--title{
+    width: 60vw;
+    overflow-wrap: break-word;
+    margin: 0ch 1ch;
+    display: flex;
+    align-self: center;
+    padding-left: 1ch;
+}
+.task-form--title_updating{
+    outline: .5px solid black;
+}
+
+.tasks-form{
+    display: flex;
+    justify-content: center;
+    font-size: min-content;
+    overflow: hidden;
+    margin: 2vh 0vh; 
+}
+
+.tasks-form--options,.main-input{
+    margin-right: 2ch;
+    padding: 1ch;
+    cursor: pointer;
+}
+
+.tasks-form--options__update{
+    background-color: #1974ec;
+    border: 2px solid #1974ec;
+    border-radius: 5%;
+}
+
+.tasks-form--options__remove{
+    background-color: #ec1919;
+    border: 2px solid #ec1919;
+    border-radius: 5%;
+}  
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footerBackgroundColor);
+    height: var(--footerHeigth);
+    color: var(--footerColor);
+    font-size: var(--footerFontSize);
+}

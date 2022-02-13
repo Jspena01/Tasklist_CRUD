@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskList</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title"><a href="#">Task List</a></h1>
+    </header>
+    <main class="main">
+        <form action="#" class="main-form">
+            <label for="main-input--text" class="main-label">Insertar una nueva tarea: </label>
+            <input type="text" name="" id="main-input--text" class="main-input main-input--text" required minlength="3" maxlength="120" autocomplete="off">
+            <input type="submit" value="INSERTAR" id="main-input--addtask" class="main-input main-input--button">
+        </form>
+        <section class="main-tasks">
+            <div class="main-tasks--task" id="taskList">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">Just one moment</footer>
+    <script src="script.js"></script>
+</body>
+</html>
